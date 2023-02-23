@@ -23,7 +23,7 @@ let html = '';
 for (const image of images) {
   html += `
     <li>
-      <img src="${image.src}" alt="${image.alt}">
+      <img src="${image.url}" alt="${image.alt}">
     </li>
   `;
 }

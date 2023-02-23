@@ -5,12 +5,13 @@ const validationInputLength = Number(
 
 const colorChange = () => {
   if (validationInput.value.length === validationInputLength) {
-    validationInput.classList.add("valid");
+    validationInput.className = "valid";
   } else if (validationInput.value.length === 0) {
-    validationInput.classList.remove("valid");
-    validationInput.classList.remove("invalid");
+    validationInput.className = "";
   } else {
-    validationInput.classList.add("invalid");
+    validationInput.className = "invalid"
+   
   }
 };
 validationInput.addEventListener("blur", colorChange);
+
